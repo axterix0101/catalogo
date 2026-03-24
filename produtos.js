@@ -5,7 +5,7 @@ const produtos = [
     categoria: 'camisetas',
     descricao: 'Modelagem versátil para catálogo casual e street.',
     preco: 1.000,
-    imagem: 'img/produtos/bonepreto.jpg'
+    imagem: 'img/produtos/bonepreto.png'
   },
   {
     id: 2,
