@@ -1,11 +1,11 @@
 const produtos = [
   {
     id: 1,
-    nome: 'Camiseta Essential Preta',
+    nome: 'Boné Preto',
     categoria: 'camisetas',
     descricao: 'Modelagem versátil para catálogo casual e street.',
-    preco: 79.9,
-    imagem: 'img/produtos/camiseta-essential-preta.jpg'
+    preco: 1.000,
+    imagem: 'img/produtos/bonepreto.jpg'
   },
   {
     id: 2,
