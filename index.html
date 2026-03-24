@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+  <title>Omega Store | Catálogo online</title>
+  <meta name="description" content="Catálogo online da Omega Store. Escolha as peças no site e finalize o pedido para retirada na loja física.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a href="#inicio" class="logo-link" aria-label="Ir para o início da Omega Store">
+      <img src="img/logo/omega-store-logo.png" alt="Logo Omega Store" class="logo-img">
+      <div class="logo-texto">
+        <strong>Omega Store</strong>
+        <span>Catálogo online</span>
+      </div>
+    </a>
+
+    <nav class="menu" aria-label="Menu principal">
+      <a href="#inicio">Início</a>
+      <a href="#categorias">Categorias</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#retirada">Retirada</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <button id="btnCarrinho" class="btn-carrinho" type="button" aria-controls="painelCarrinho" aria-expanded="false">
+      Carrinho <span id="contadorCarrinho">0</span>
+    </button>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-conteudo">
+      <span class="tag-destaque">Streetwear • retirada na loja</span>
+      <h1>Escolha suas peças online e retire com praticidade.</h1>
+      <p>
+        Catálogo simples, visual direto e atendimento rápido no WhatsApp.
+        Veja camisetas, bermudas, moletons, bonés e conjuntos da Omega Store.
+      </p>
+
+      <div class="hero-botoes">
+        <a href="#produtos" class="btn btn-laranja">Ver catálogo</a>
+        <a href="#retirada" class="btn btn-transparente">Como comprar</a>
+      </div>
+
+      <div class="hero-info-lista">
+        <div class="mini-info">
+          <strong>Peças selecionadas</strong>
+          <span>Catálogo organizado por categoria</span>
+        </div>
+        <div class="mini-info">
+          <strong>Retirada rápida</strong>
+          <span>Pedido feito online, retirada presencial</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <img src="img/logo/omega-store-logo.png" alt="Omega Store" class="hero-logo">
+      <h2>Omega Store</h2>
+      <p>Preto, laranja e uma vitrine pensada para vender no WhatsApp sem complicação.</p>
+      <div class="hero-card-badge">Retire na loja</div>
+    </div>
+  </section>
+
+  <section class="beneficios" id="categorias" aria-label="Categorias e destaques da loja">
+    <article class="beneficio destaque-beneficio">
+      <span class="beneficio-tag">Categorias</span>
+      <h3>Camisetas</h3>
+      <p>Modelos casuais e street para o dia a dia.</p>
+    </article>
+    <article class="beneficio destaque-beneficio">
+      <span class="beneficio-tag">Categorias</span>
+      <h3>Bermudas</h3>
+      <p>Peças versáteis para compor looks leves e urbanos.</p>
+    </article>
+    <article class="beneficio destaque-beneficio">
+      <span class="beneficio-tag">Categorias</span>
+      <h3>Moletons e bonés</h3>
+      <p>Itens para completar a vitrine com estilo e identidade.</p>
+    </article>
+  </section>
+
+  <section class="catalogo-topo" id="produtos">
+    <div>
+      <h2>Catálogo</h2>
+      <p>Filtre por categoria ou pesquise o nome da peça.</p>
+    </div>
+
+    <div class="filtros">
+      <label class="sr-only" for="busca">Buscar produto</label>
+      <input type="text" id="busca" maxlength="60" placeholder="Buscar produto..." autocomplete="off">
+
+      <label class="sr-only" for="filtroCategoria">Filtrar por categoria</label>
+      <select id="filtroCategoria">
+        <option value="todos">Todas as categorias</option>
+        <option value="camisetas">Camisetas</option>
+        <option value="bermudas">Bermudas</option>
+        <option value="moletons">Moletons</option>
+        <option value="bones">Bonés</option>
+        <option value="conjuntos">Conjuntos</option>
+      </select>
+    </div>
+  </section>
+
+  <main class="grid-produtos" id="listaProdutos" aria-live="polite"></main>
+
+  <section class="retirada" id="retirada">
+    <h2>Como funciona a compra</h2>
+    <div class="retirada-grid">
+      <article class="passo">
+        <span>1</span>
+        <h3>Escolha os produtos</h3>
+        <p>Adicione ao carrinho as peças que você quer reservar.</p>
+      </article>
+      <article class="passo">
+        <span>2</span>
+        <h3>Envie o pedido</h3>
+        <p>Finalize no WhatsApp com nome, telefone e observações.</p>
+      </article>
+      <article class="passo">
+        <span>3</span>
+        <h3>Retire na loja</h3>
+        <p>A loja confirma e você busca o pedido presencialmente.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="loja-fisica" id="contato">
+    <div class="loja-box">
+      <h2>Atendimento e retirada</h2>
+      <p><strong>Endereço:</strong> Rua Exemplo, 123 - Centro</p>
+      <p><strong>Horário:</strong> Seg a Sáb - 09h às 18h</p>
+      <p><strong>WhatsApp:</strong> (32) 99999-9999</p>
+      <a
+        class="btn btn-laranja"
+        href="https://wa.me/5532999999999?text=Olá!%20Quero%20atendimento%20da%20Omega%20Store."
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Falar no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <aside class="painel-carrinho" id="painelCarrinho" aria-hidden="true">
+    <div class="carrinho-topo">
+      <h2>Seu Carrinho</h2>
+      <button id="fecharCarrinho" type="button" aria-label="Fechar carrinho">✕</button>
+    </div>
+
+    <div id="itensCarrinho" class="itens-carrinho">
+      <p class="carrinho-vazio">Seu carrinho está vazio.</p>
+    </div>
+
+    <div class="carrinho-formulario">
+      <label class="sr-only" for="nomeCliente">Seu nome</label>
+      <input type="text" id="nomeCliente" placeholder="Seu nome" maxlength="60" autocomplete="name">
+
+      <label class="sr-only" for="telefoneCliente">Seu telefone</label>
+      <input type="tel" id="telefoneCliente" placeholder="Seu telefone" maxlength="20" autocomplete="tel">
+
+      <label class="sr-only" for="observacaoPedido">Observações</label>
+      <textarea id="observacaoPedido" maxlength="200" placeholder="Observações do pedido (opcional)"></textarea>
+    </div>
+
+    <div class="carrinho-rodape">
+      <h3>Total: R$ <span id="totalCarrinho">0,00</span></h3>
+      <button class="btn-finalizar" id="finalizarPedido" type="button">
+        Finalizar e retirar na loja
+      </button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay" hidden></div>
+
+  <script src="produtos.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
